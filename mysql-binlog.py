@@ -34,9 +34,10 @@ def parseblock(block):
     size = int(stopscn) - int(startscn)
     dml = len(insert)+len(update)+len(delete)
     print('Xid:%s Size:%s(bytes) DML:%s INSERT:%s UPDATE:%s DELETE:%s' % (xid, size, dml, len(insert), len(update), len(delete)))
-    print('---------------------------------------------------------')
+    print('-------------------------------------------------------------')
     for key in alllist:
         print('Table:%s INSERT:%s UPDATE:%s DELETE:%s \n' % (key, insert.count(key), update.count(key), delete.count(key)))
+    print('\n')
     print('\n')
 
 
